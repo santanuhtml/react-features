@@ -1,0 +1,17 @@
+.productCard{
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+.productCard img{
+    object-fit: cover;
+    height: 218px;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.product-list > div{
+    flex-basis: 200px;
+}

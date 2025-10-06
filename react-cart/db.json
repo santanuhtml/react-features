@@ -1,0 +1,46 @@
+
+
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Ergonomic Office Chair",
+            "price": 129.99,
+            "image": "/src/assets/images/image1.jpg",
+            "description": "An ergonomic office chair designed for comfort during long hours of work, with adjustable height and lumbar support.",
+            "slug": "ergonomic-office-chair"
+        },
+        {
+            "id": 2,
+            "name": "Recliner Lounge Chair",
+            "price": 199.99,
+            "image": "/src/assets/images/image2.jpg",
+            "description": "A comfortable recliner lounge chair for relaxation with plush padding and adjustable backrest.",
+            "slug": "recliner-lounge-chair"
+        },
+        {
+            "id": 3,
+            "name": "Dining Chair Set of 2",
+            "price": 89.99,
+            "image": "/src/assets/images/image3.jpg",
+            "description": "A set of 2 modern dining chairs with wooden legs and a cushioned seat for comfort.",
+            "slug": "dining-chair-set-of-2"
+        },
+        {
+            "id": 4,
+            "name": "Folding Chair",
+            "price": 24.99,
+            "image": "/src/assets/images/image4.jpg",
+            "description": "A portable folding chair for easy storage and transport, perfect for outdoor events and gatherings.",
+            "slug": "folding-chair"
+        },
+        {
+            "id": 5,
+            "name": "Adjustable Bar Stool",
+            "price": 59.99,
+            "image": "/src/assets/images/image5.jpg",
+            "description": "An adjustable bar stool with a sturdy base and sleek design, ideal for kitchens or home bars.",
+            "slug": "adjustable-bar-stool"
+        }
+    ]
+}
