@@ -9,10 +9,11 @@ Each folder inside this repository contains an independent React project that fo
 
 | # | Project Name | Description |
 |---|---------------|-------------|
-| 1 | `react-cart` | used context API and json-server |
-| 2 | `react-crud` | used json-server |
-| 3 | `react-form-validation` | used react-hook-form |
-| 4 | `react-theme` | used context API |
+| 1 | `react-auth-contextapi` | used context API and protected routes |
+| 2 | `react-cart` | used context API and json-server |
+| 3 | `react-crud` | used json-server |
+| 4 | `react-form-validation` | used react-hook-form |
+| 5 | `react-theme` | used context API |
 
 > 💡 *More React feature projects will be added soon.*
 
