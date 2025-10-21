@@ -1,21 +1,24 @@
+import { useContext } from "react";
+import CartContext from "../context/CartContext.jsx";
+import ProductCart from "../component/ProductCart.jsx";
 
-import ProductCart from "../component/ProductCart";
-import ProductList from "../component/ProductList";
-import { useEffect } from "react";
-import axios from "axios";
-function Home(){
-    useEffect(()=>{
-        axios.get(`http://localhost:3000/products`)
-        .then(res=>{
-            console.log(res.data);
-            setProducts(res.data);
-        })
-    }, [])
-    return(
-        <>
-            
-            <ProductCart />
-        </>
-    )
+function Home() {
+  const { products } = useContext(CartContext);
+
+  return (
+    <div>
+      <h1>Product List</h1>
+      <div className="product-list">
+        {products.length === 0 ? (
+          <p>Loading products...</p>
+        ) : (
+          products.map((item) => (
+            <ProductCart key={item.id} data={item} />
+          ))
+        )}
+      </div>
+    </div>
+  );
 }
+
 export default Home;

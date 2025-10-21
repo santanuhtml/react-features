@@ -1,31 +1,30 @@
+import { CartProvider } from "./context/CartContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Details from "./pages/Details";
+import ProductDetails from "./pages/ProductDetails";
 import Layout from "./component/Layout";
-
-import { useState } from "react";
-
-
-function App(){
-  
-  const [show, setShow] = useState(true);
-  const [cart, setCart] = useState([]);
-
-
-  return(
+import './assets/css/custom.css';
+import CartPage from "./pages/CartPage";
+function App() {
+  return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/:slug" element={<Details />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      
+        <CartProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/:slug" element={<ProductDetails />} />
+                <Route path="/cart" element={<CartPage />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </CartProvider>
+     
     </>
-  )
+  );
 }
 
 export default App;
